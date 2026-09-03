@@ -1,0 +1,144 @@
+.back {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: var(--side-padding);
+  font-family: var(--font-display);
+  font-size: 16px;
+  color: var(--color-plum-dark);
+}
+
+.backArrow {
+  width: 16px;
+  height: 16px;
+  transform: rotate(180deg);
+}
+
+.intro {
+  background: linear-gradient(177deg, #ffffff 9%, var(--color-pink) 100%);
+  padding: 32px var(--side-padding);
+  display: flex;
+}
+
+.introInner {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  max-width: var(--content-max-width);
+  margin: 0 auto;
+}
+
+.tag {
+  align-self: flex-start;
+  padding: 4px 10px;
+  background: var(--color-pink);
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--color-plum-dark);
+}
+
+.title {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--color-black);
+}
+
+.body {
+  font-family: var(--font-body);
+  font-size: 16px;
+  color: var(--color-black);
+  max-width: 720px;
+}
+
+.challenges {
+  background: var(--color-lime);
+  padding: 32px var(--side-padding);
+  display: flex;
+}
+
+.challengesGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+  width: 100%;
+  max-width: var(--content-max-width);
+  margin: 0 auto;
+}
+
+.challengeCard {
+  padding: 12px;
+  border: 1px solid var(--color-black);
+  font-family: var(--font-body);
+  font-size: 16px;
+  color: var(--color-black);
+}
+
+.decisions {
+  background: var(--color-pink);
+  padding: 40px var(--side-padding);
+  display: flex;
+}
+
+.decisionsInner {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 100%;
+  max-width: var(--content-max-width);
+  margin: 0 auto;
+}
+
+.decision {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.decisionTitle {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--color-plum-dark);
+}
+
+.decisionText {
+  font-family: var(--font-body);
+  font-size: 16px;
+  color: var(--color-plum-dark);
+  max-width: 640px;
+}
+
+@media (min-width: 768px) {
+  .back {
+    font-size: 18px;
+  }
+
+  .intro,
+  .challenges,
+  .decisions {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .body {
+    font-size: 18px;
+  }
+
+  .challengesGrid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+  }
+
+  .decisionsInner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+}

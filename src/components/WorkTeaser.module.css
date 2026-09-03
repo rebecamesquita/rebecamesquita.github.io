@@ -1,0 +1,43 @@
+.section {
+  background: var(--color-lime);
+  padding: 24px var(--side-padding);
+  display: flex;
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  max-width: var(--content-max-width);
+  margin: 0 auto;
+}
+
+.line {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.1;
+  color: var(--color-plum-dark);
+}
+
+.big {
+  font-family: var(--font-body);
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 1.15;
+  color: var(--color-plum-dark);
+  max-width: 780px;
+}
+
+@media (min-width: 768px) {
+  .section {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
+  .line,
+  .big {
+    font-size: 44px;
+  }
+}

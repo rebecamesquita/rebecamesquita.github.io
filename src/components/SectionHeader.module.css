@@ -1,0 +1,42 @@
+.header {
+  display: flex;
+  align-items: center;
+  padding: 34px 14px;
+}
+
+.dark {
+  background: var(--color-plum-dark);
+}
+
+.light {
+  background: var(--color-lime);
+}
+
+.pill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  font-family: var(--font-display);
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.light .pill {
+  color: var(--color-plum-dark);
+}
+
+.dark .pill.pink {
+  color: var(--color-pink);
+}
+
+.dark .pill.lime {
+  color: var(--color-lime);
+}
+
+.arrow {
+  width: 24px;
+  height: 24px;
+  transform: rotate(45deg);
+}
