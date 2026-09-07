@@ -5,6 +5,7 @@ import SectionHeader from '../components/SectionHeader'
 import ScreensCarousel from '../components/ScreensCarousel'
 import ContactCTA from '../components/ContactCTA'
 import styles from './DMSCaseStudy.module.css'
+import React from 'react'
 
 const CHALLENGES = [
   'Designing an approachable experience for users with different levels of literacy and digital familiarity.',
@@ -36,9 +37,18 @@ const DECISIONS = [
   },
 ]
 
+const ScrollToTopOnMount = () => {
+  React.useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
+  return null
+}
+
 function DMSCaseStudy() {
   return (
     <main>
+      <ScrollToTopOnMount />
       <Link to="/" className={styles.back}>
         <Arrow className={styles.backArrow} />
         <span>Go back</span>

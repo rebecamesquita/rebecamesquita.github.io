@@ -59,6 +59,10 @@
     height: 420px;
   }
 
+  .photo {
+    object-position: center 25%;
+  }
+
   .vector {
     width: 300px;
   }

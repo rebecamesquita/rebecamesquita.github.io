@@ -14,7 +14,6 @@ const FEATURES = [
 function PinFeatures() {
   return (
     <section className={styles.section}>
-      <p className={styles.watermark}>pin button</p>
       <div className={styles.list}>
         {FEATURES.map((feature) => (
           <div key={feature.label} className={styles.item}>

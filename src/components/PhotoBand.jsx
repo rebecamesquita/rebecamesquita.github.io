@@ -1,10 +1,10 @@
-import badgePhoto from '../assets/images/badge-photo.png'
+import dmsThumb from '../assets/images/dms-thumb.png'
 import styles from './PhotoBand.module.css'
 
 function PhotoBand() {
   return (
     <div className={styles.band}>
-      <img src={badgePhoto} alt="" aria-hidden="true" />
+      <img src={dmsThumb} alt="" aria-hidden="true" className={styles.photo} />
     </div>
   )
 }

@@ -1,5 +1,4 @@
 import aboutPhoto from '../assets/images/about-photo.png'
-import aboutVector from '../assets/icons/about-vector.svg'
 import styles from './About.module.css'
 
 function About() {
@@ -7,12 +6,6 @@ function About() {
     <section className={styles.section} id="about">
       <div className={styles.photoWrap}>
         <img src={aboutPhoto} alt="Rebeca Mesquita" className={styles.photo} />
-        <img
-          src={aboutVector}
-          alt=""
-          aria-hidden="true"
-          className={styles.vector}
-        />
       </div>
       <div className={styles.inner}>
         <h2 className={styles.name}>Rebeca Mesquita</h2>

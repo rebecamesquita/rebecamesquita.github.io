@@ -11,7 +11,7 @@ function ContactCTA() {
           unexpected.
         </p>
         <div className={styles.actions}>
-          <Button href="https://www.linkedin.com/" variant="light">
+          <Button href="https://www.linkedin.com/in/rebeca-mesquita/" variant="light">
             Let&rsquo;s connect on LinkedIn
           </Button>
           <Button href="mailto:rebecamesquita2606@gmail.com" variant="lime">

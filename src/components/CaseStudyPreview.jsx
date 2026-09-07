@@ -24,13 +24,13 @@ function CaseStudyPreview() {
             A mobile app that brings transparency and trust to how waste
             picker cooperatives in Brazil track and share their work.
           </p>
-          <Link
-            to="/case-studies/data-management-system"
-            className={styles.link}
-          >
-            <span>Explore the case</span>
-            <ExternalArrow className={styles.arrow} />
-          </Link>
+            <Link
+              to="/case-studies/data-management-system"
+              className={styles.link}
+            >
+              <span>Explore the case</span>
+              <ExternalArrow className={styles.arrow} />
+            </Link>
         </div>
       </div>
     </section>
